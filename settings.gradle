@@ -1,0 +1,2 @@
+rootProject.name='PlacarApp'
+include ':app'
