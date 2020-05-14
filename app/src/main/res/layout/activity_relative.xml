@@ -8,9 +8,10 @@
     >
 
     <TextView
+        android:id="@+id/scoreTime2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="0"
         android:padding="16dp"
         android:textSize="@dimen/texto_extra_grande"
         android:layout_toRightOf="@+id/x"
@@ -27,6 +28,7 @@
         />
 
     <TextView
+        android:id="@+id/scoreTime1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/x"
@@ -34,6 +36,26 @@
         android:text="0"
         android:padding="16dp"
         android:textSize="@dimen/texto_extra_grande"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahia"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:layout_below="@+id/scoreTime1"
+        android:layout_alignRight="@+id/scoreTime1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitória"
+        android:textColor="@color/gray"
+        android:textSize="24sp"
+        android:layout_below="@+id/scoreTime2"
+        android:layout_alignLeft="@+id/scoreTime2"
         />
 
 </RelativeLayout>
