@@ -1,86 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/scoreTime2"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="0"
-        android:padding="16dp"
-        android:textSize="@dimen/texto_extra_grande"
-        android:layout_toRightOf="@+id/x"
         android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/x"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="@dimen/texto_extra_grande" />
+
+    <ImageView
+        android:src="@drawable/ic_ball"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/scoreTime2"
+        android:layout_alignTop="@+id/scoreTime2"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:tint="@color/white"
         />
 
     <TextView
         android:id="@+id/x"
-        android:text="x"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/texto_extra_grande"
-        />
+        android:layout_centerInParent="true"
+        android:text="x"
+        android:textSize="@dimen/texto_extra_grande" />
 
     <TextView
         android:id="@+id/scoreTime1"
-        android:background="#1637D8"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/x"
         android:layout_centerVertical="true"
-        android:text="0"
-        android:textColor="#FFFFFF"
+        android:layout_toLeftOf="@+id/x"
+        android:background="@color/blue"
         android:gravity="center"
-        android:textSize="@dimen/texto_extra_grande"
-        />
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texto_extra_grande" />
 
-    <View
+    <ImageView
+        android:src="@drawable/ic_ball"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        android:background="#FFFFFF"
         android:layout_alignLeft="@+id/scoreTime1"
         android:layout_alignTop="@+id/scoreTime1"
-        />
+        android:tint="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:id="@+id/setScoreTime1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="1"
-        android:background="#E6CC6E"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
         android:layout_below="@+id/scoreTime1"
         android:layout_alignRight="@+id/scoreTime1"
-        />
+        android:background="@color/set_background"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/setScoreTime2"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Bahia"
-        android:textColor="@color/gray"
-        android:textSize="24sp"
-        android:layout_below="@+id/setScoreTime1"
-        android:layout_alignRight="@+id/scoreTime1"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vitória"
-        android:textColor="@color/gray"
-        android:textSize="24sp"
         android:layout_below="@+id/scoreTime2"
         android:layout_alignLeft="@+id/scoreTime2"
-        />
+        android:background="@color/set_background"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setScoreTime1"
+        android:layout_alignRight="@+id/scoreTime1"
+        android:text="Bahia"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setScoreTime2"
+        android:layout_alignLeft="@+id/scoreTime2"
+        android:text="Vitória"
+        android:textColor="@color/gray"
+        android:textSize="24sp" />
 
 </RelativeLayout>
