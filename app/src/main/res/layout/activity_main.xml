@@ -8,7 +8,7 @@
     >
 
     <TextView
-        android:id="@+id/scoreTime2"
+        android:id="@+id/scoreTime2TXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -28,7 +28,7 @@
         />
 
     <TextView
-        android:id="@+id/scoreTime1"
+        android:id="@+id/scoreTime1TXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/x"
@@ -44,8 +44,8 @@
         android:text="Bahia"
         android:textColor="@color/gray"
         android:textSize="24sp"
-        android:layout_below="@+id/scoreTime1"
-        android:layout_alignRight="@+id/scoreTime1"
+        android:layout_below="@+id/scoreTime1TXT"
+        android:layout_alignRight="@+id/scoreTime1TXT"
         />
 
     <TextView
@@ -54,8 +54,8 @@
         android:text="Vitória"
         android:textColor="@color/gray"
         android:textSize="24sp"
-        android:layout_below="@+id/scoreTime2"
-        android:layout_alignLeft="@+id/scoreTime2"
+        android:layout_below="@+id/scoreTime2TXT"
+        android:layout_alignLeft="@+id/scoreTime2TXT"
         />
 
 </RelativeLayout>
