@@ -1,61 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/scoreTime2TXT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:padding="16dp"
-        android:textSize="@dimen/texto_extra_grande"
-        android:layout_toRightOf="@+id/x"
-        android:layout_centerVertical="true"
+    <Button
+        android:id="@+id/futebolBTN"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/futebol"
         />
 
-    <TextView
-        android:id="@+id/x"
-        android:text="x"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/texto_extra_grande"
+    <Button
+        android:id="@+id/voleiBTN"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/volei"
         />
 
-    <TextView
-        android:id="@+id/scoreTime1TXT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/x"
-        android:layout_centerVertical="true"
-        android:text="0"
-        android:padding="16dp"
-        android:textSize="@dimen/texto_extra_grande"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bahia"
-        android:textColor="@color/gray"
-        android:textSize="24sp"
-        android:layout_below="@+id/scoreTime1TXT"
-        android:layout_alignRight="@+id/scoreTime1TXT"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vitória"
-        android:textColor="@color/gray"
-        android:textSize="24sp"
-        android:layout_below="@+id/scoreTime2TXT"
-        android:layout_alignLeft="@+id/scoreTime2TXT"
-        />
-
-</RelativeLayout>
+</LinearLayout>
