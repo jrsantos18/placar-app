@@ -10,7 +10,7 @@ class FutebolActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_futebol)
 
-        var scoreTime1 = 0 //int
+        var scoreTime1 = 0
         var scoreTime2 = 0
 
         scoreTime1TXT.setOnClickListener {

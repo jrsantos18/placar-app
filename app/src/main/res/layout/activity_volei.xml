@@ -6,7 +6,7 @@
     tools:context=".FutebolActivity">
 
     <TextView
-        android:id="@+id/scoreTime2"
+        android:id="@+id/scoreTime2TXT"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -18,11 +18,13 @@
         android:textSize="@dimen/texto_extra_grande" />
 
     <ImageView
+        android:id="@+id/service2IMG"
+        android:visibility="gone"
         android:src="@drawable/ic_ball"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_alignRight="@+id/scoreTime2"
-        android:layout_alignTop="@+id/scoreTime2"
+        android:layout_alignRight="@+id/scoreTime2TXT"
+        android:layout_alignTop="@+id/scoreTime2TXT"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:tint="@color/white"
@@ -37,7 +39,7 @@
         android:textSize="@dimen/texto_extra_grande" />
 
     <TextView
-        android:id="@+id/scoreTime1"
+        android:id="@+id/scoreTime1TXT"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -49,11 +51,13 @@
         android:textSize="@dimen/texto_extra_grande" />
 
     <ImageView
+        android:id="@+id/service1IMG"
+        android:visibility="gone"
         android:src="@drawable/ic_ball"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_alignLeft="@+id/scoreTime1"
-        android:layout_alignTop="@+id/scoreTime1"
+        android:layout_alignLeft="@+id/scoreTime1TXT"
+        android:layout_alignTop="@+id/scoreTime1TXT"
         android:tint="@color/white"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp" />
@@ -62,11 +66,11 @@
         android:id="@+id/setScoreTime1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scoreTime1"
-        android:layout_alignRight="@+id/scoreTime1"
+        android:layout_below="@+id/scoreTime1TXT"
+        android:layout_alignRight="@+id/scoreTime1TXT"
         android:background="@color/set_background"
         android:gravity="center"
-        android:text="1"
+        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
@@ -74,11 +78,11 @@
         android:id="@+id/setScoreTime2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scoreTime2"
-        android:layout_alignLeft="@+id/scoreTime2"
+        android:layout_below="@+id/scoreTime2TXT"
+        android:layout_alignLeft="@+id/scoreTime2TXT"
         android:background="@color/set_background"
         android:gravity="center"
-        android:text="1"
+        android:text="0"
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
@@ -86,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setScoreTime1"
-        android:layout_alignRight="@+id/scoreTime1"
+        android:layout_alignRight="@+id/scoreTime1TXT"
         android:text="Bahia"
         android:textColor="@color/gray"
         android:textSize="24sp" />
@@ -95,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setScoreTime2"
-        android:layout_alignLeft="@+id/scoreTime2"
+        android:layout_alignLeft="@+id/scoreTime2TXT"
         android:text="Vitória"
         android:textColor="@color/gray"
         android:textSize="24sp" />

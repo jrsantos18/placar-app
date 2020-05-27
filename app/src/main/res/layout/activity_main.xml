@@ -10,14 +10,14 @@
     <Button
         android:id="@+id/futebolBTN"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/btn_height"
         android:text="@string/futebol"
         />
 
     <Button
         android:id="@+id/voleiBTN"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/btn_height"
         android:text="@string/volei"
         />
 
