@@ -87,6 +87,7 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/time1TXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setScoreTime1"
@@ -96,6 +97,7 @@
         android:textSize="24sp" />
 
     <TextView
+        android:id="@+id/time2TXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/setScoreTime2"
